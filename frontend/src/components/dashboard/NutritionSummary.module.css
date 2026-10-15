@@ -1,0 +1,44 @@
+.card {
+  background: #1F2918;
+  color: #F7F3EC;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.top { display: flex; align-items: center; justify-content: space-between; }
+.title { font-family: 'Fraunces', serif; font-size: 18px; }
+.badge {
+  font-size: 11px;
+  background: rgba(94,113,72,0.4);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.ringRow { display: flex; align-items: center; gap: 24px; margin-top: 20px; }
+.ring {
+  width: 128px; height: 128px; border-radius: 50%;
+  display: grid; place-items: center; flex-shrink: 0;
+}
+.ringInner {
+  width: 96px; height: 96px; border-radius: 50%;
+  background: #1F2918;
+  display: grid; place-items: center; text-align: center;
+}
+.ringValue { font-family: 'Fraunces', serif; font-size: 24px; line-height: 1; }
+.ringLabel { font-size: 11px; opacity: 0.6; margin-top: 4px; }
+
+.macros { flex: 1; display: flex; flex-direction: column; gap: 12px; font-size: 14px; }
+.macroItem {}
+.macroTop { display: flex; justify-content: space-between; }
+.macroVals { opacity: 0.7; }
+.macroTrack { height: 6px; border-radius: 4px; background: rgba(247,243,236,0.1); margin-top: 4px; }
+.macroFill { height: 100%; border-radius: 4px; transition: width 0.3s; }
+
+.extras {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 8px; margin-top: auto; padding-top: 24px; text-align: center;
+}
+.extraBox { border-radius: 8px; background: rgba(247,243,236,0.05); padding: 8px; }
+.extraVal { font-weight: 500; }
+.extraLabel { font-size: 11px; opacity: 0.6; }

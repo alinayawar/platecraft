@@ -1,0 +1,106 @@
+[
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/health",
+    "response_shape": {
+      "status": "string"
+    },
+    "sample_body": null,
+    "sample_params": {},
+    "success_status": 200
+  },
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/recipes",
+    "response_shape": "array",
+    "sample_body": null,
+    "sample_params": {},
+    "success_status": 200
+  },
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/recipes/:id",
+    "response_shape": {
+      "category": "string?",
+      "cookTimeMinutes": "int?",
+      "description": "string?",
+      "id": "int",
+      "imageUrl": "string?",
+      "ingredients": "array",
+      "instructions": "string?",
+      "nutrition": "object",
+      "prepTimeMinutes": "int?",
+      "servings": "int",
+      "title": "string"
+    },
+    "sample_body": null,
+    "sample_params": {
+      "id": 1
+    },
+    "success_status": 200
+  },
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/meal-plans",
+    "response_shape": "array",
+    "sample_body": null,
+    "sample_params": {},
+    "success_status": 200
+  },
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/grocery-list",
+    "response_shape": "array",
+    "sample_body": null,
+    "sample_params": {},
+    "success_status": 200
+  },
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/nutrition/daily",
+    "response_shape": "array",
+    "sample_body": null,
+    "sample_params": {},
+    "success_status": 200
+  },
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/meal-plans/:id",
+    "request_body": null,
+    "response_shape": null,
+    "sample_body": null,
+    "sample_params": {
+      "id": 1
+    },
+    "success_status": 200
+  },
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/grocery-list/:id",
+    "request_body": null,
+    "response_shape": null,
+    "sample_body": null,
+    "sample_params": {
+      "id": 1
+    },
+    "success_status": 200
+  },
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/grocery-list/generate",
+    "request_body": null,
+    "response_shape": null,
+    "sample_body": null,
+    "sample_params": null,
+    "success_status": 200
+  }
+]

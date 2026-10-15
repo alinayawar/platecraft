@@ -1,0 +1,35 @@
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .wrap {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card {
+  background: var(--color-paper, #FBF9F5);
+  border: 1px solid var(--color-line, #E8E1D5);
+  border-radius: 1rem;
+  padding: 1.25rem;
+}
+
+.cardTitle {
+  font-family: 'Fraunces', serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.cardSub {
+  font-size: 0.75rem;
+  color: var(--color-muted, #7A7166);
+  margin-bottom: 1rem;
+}
+
+.chartWrap {
+  width: 100%;
+}

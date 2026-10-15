@@ -1,0 +1,27 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+@media (min-width: 1024px) { .grid { grid-template-columns: repeat(4, 1fr); } }
+
+.card {
+  background: #FBF9F5;
+  border: 1px solid #E8E1D5;
+  border-radius: 12px;
+  padding: 16px;
+}
+.label { font-size: 12px; color: #7A7166; }
+.value { font-family: 'Fraunces', serif; font-size: 24px; margin-top: 4px; }
+.sub { font-size: 16px; color: #7A7166; }
+.note { font-size: 12px; margin-top: 4px; color: #4A5B37; }
+.noteGreen { font-size: 12px; margin-top: 4px; color: #4A5B37; }
+.noteMuted { font-size: 12px; margin-top: 4px; color: #7A7166; }
+.actionBadge {
+  background: #F5DFD3;
+  color: #B05530;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+}

@@ -1,0 +1,244 @@
+.page {
+  max-width: 800px;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.subtitle {
+  font-size: 0.813rem;
+  color: var(--color-muted, #7A7166);
+}
+
+.title {
+  font-family: 'Fraunces', serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--color-olive-900, #1F2918);
+  margin-top: 4px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.weekNav {
+  display: flex;
+  gap: 4px;
+}
+
+.navBtn {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  border: 1px solid var(--color-line, #E8E1D5);
+  background: var(--color-paper, #FBF9F5);
+  cursor: pointer;
+  color: var(--color-ink, #2A2620);
+  transition: background 0.15s;
+}
+.navBtn:hover { background: var(--color-cream, #F7F3EC); }
+
+.generateBtn {
+  height: 40px;
+  padding: 0 16px;
+  border-radius: 8px;
+  background: var(--color-olive-600, #4A5B37);
+  color: var(--color-cream, #F7F3EC);
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.15s;
+}
+.generateBtn:hover { background: var(--color-olive-700, #3A4A2B); }
+.generateBtn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.spin { animation: spin 1s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.searchWrap {
+  position: relative;
+  flex: 1;
+  min-width: 200px;
+  max-width: 320px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-muted, #7A7166);
+  width: 16px;
+  height: 16px;
+}
+
+.searchInput {
+  width: 100%;
+  height: 40px;
+  padding-left: 36px;
+  padding-right: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--color-line, #E8E1D5);
+  background: var(--color-paper, #FBF9F5);
+  font-size: 0.875rem;
+  outline: none;
+}
+.searchInput:focus { box-shadow: 0 0 0 2px rgba(94,113,72,0.2); }
+
+.stats {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.totalBadge {
+  font-size: 0.75rem;
+  color: var(--color-muted, #7A7166);
+}
+
+.remainBadge {
+  font-size: 0.75rem;
+  background: #F5DFD3;
+  color: #B05530;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.doneBadge {
+  font-size: 0.75rem;
+  background: var(--color-olive-50, #EEF1E8);
+  color: var(--color-olive-600, #4A5B37);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.error {
+  color: #B05530;
+  font-size: 0.875rem;
+  margin-bottom: 16px;
+}
+
+.loading {
+  text-align: center;
+  padding: 48px 0;
+  color: var(--color-muted, #7A7166);
+}
+
+.empty {
+  text-align: center;
+  padding: 64px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  color: var(--color-muted, #7A7166);
+}
+
+.emptyTitle {
+  font-family: 'Fraunces', serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-ink, #2A2620);
+}
+
+.emptyDesc {
+  font-size: 0.875rem;
+  max-width: 320px;
+}
+
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.aisleGroup {}
+
+.aisleLabel {
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-muted, #7A7166);
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--color-line, #E8E1D5);
+  margin-bottom: 4px;
+}
+
+.itemList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-line, #E8E1D5);
+}
+.item:last-child { border-bottom: none; }
+
+.itemLabel {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  flex: 1;
+  min-width: 0;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: #4A5B37;
+  flex-shrink: 0;
+}
+
+.itemName {
+  font-size: 0.875rem;
+  color: var(--color-ink, #2A2620);
+  transition: all 0.15s;
+}
+
+.checked {
+  text-decoration: line-through;
+  color: #A39A8E;
+}
+
+.itemQty {
+  font-size: 0.75rem;
+  color: var(--color-muted, #7A7166);
+  white-space: nowrap;
+  margin-left: 12px;
+}
+
+@media (max-width: 640px) {
+  .header { flex-direction: column; align-items: flex-start; }
+  .actions { width: 100%; justify-content: space-between; }
+  .searchWrap { max-width: none; }
+}

@@ -1,0 +1,44 @@
+.card {
+  background: #FBF9F5;
+  border: 1px solid #E8E1D5;
+  border-radius: 16px;
+  overflow: hidden;
+  display: grid;
+}
+@media (min-width: 768px) { .card { grid-template-columns: 1.1fr 1fr; } }
+
+.imageWrap { position: relative; min-height: 240px; }
+.image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.imageOverlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(31,41,24,0.85), rgba(31,41,24,0.1), transparent);
+}
+.imageContent { position: absolute; bottom: 0; padding: 20px; color: #F7F3EC; }
+.badge {
+  font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em;
+  background: #C8673F; padding: 2px 8px; border-radius: 4px;
+}
+.title { font-family: 'Fraunces', serif; font-size: 22px; margin-top: 8px; line-height: 1.2; }
+.meta { font-size: 13px; opacity: 0.8; margin-top: 4px; }
+
+.list { padding: 20px; }
+.listHeader { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.listTitle { font-family: 'Fraunces', serif; font-size: 18px; font-weight: 600; }
+
+.timeline { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 4px; }
+.slot {
+  display: flex; align-items: center; gap: 12px;
+  padding: 8px; border-radius: 8px;
+}
+.dotFilled {
+  width: 24px; height: 24px; border-radius: 50%;
+  background: #4A5B37; flex-shrink: 0;
+}
+.dotEmpty {
+  width: 24px; height: 24px; border-radius: 50%;
+  border: 2px solid #E8E1D5; flex-shrink: 0;
+}
+.slotContent { flex: 1; min-width: 0; }
+.slotType { font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: #7A7166; }
+.slotName { font-size: 14px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mutedName { color: #7A7166; }

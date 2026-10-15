@@ -1,0 +1,39 @@
+.overlay {
+  position: fixed; inset: 0; z-index: 50;
+  display: flex; align-items: center; justify-content: center;
+  padding: 16px;
+  background: rgba(31,41,24,0.4);
+}
+.modal {
+  background: #FBF9F5;
+  border-radius: 16px;
+  width: 100%; max-width: 420px;
+  padding: 24px;
+  border: 1px solid #E8E1D5;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+.modalHeader { display: flex; align-items: center; justify-content: space-between; }
+.modalTitle { font-family: 'Fraunces', serif; font-size: 20px; font-weight: 600; }
+.closeBtn { background: none; border: none; font-size: 18px; color: #7A7166; cursor: pointer; }
+
+.field { display: block; margin-top: 16px; font-size: 14px; font-weight: 500; }
+.input {
+  display: block; width: 100%; margin-top: 6px;
+  height: 40px; border-radius: 8px;
+  border: 1px solid #E8E1D5; background: #fff;
+  padding: 0 12px; font-size: 14px;
+}
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+.actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 24px; }
+.cancelBtn {
+  height: 40px; padding: 0 16px; border-radius: 8px;
+  border: 1px solid #E8E1D5; background: transparent;
+  font-size: 14px; cursor: pointer;
+}
+.submitBtn {
+  height: 40px; padding: 0 16px; border-radius: 8px;
+  background: #4A5B37; color: #F7F3EC; border: none;
+  font-size: 14px; font-weight: 500; cursor: pointer;
+}
+.submitBtn:disabled { opacity: 0.6; }

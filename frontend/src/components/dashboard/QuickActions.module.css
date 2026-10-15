@@ -1,0 +1,12 @@
+.wrap { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.btn {
+  height: 40px; padding: 0 16px;
+  border-radius: 8px;
+  border: 1px solid #E8E1D5;
+  background: #FBF9F5;
+  font-size: 14px; font-weight: 500;
+  color: #2A2620;
+  text-decoration: none;
+  display: inline-flex; align-items: center;
+}
+.btn:hover { background: #F7F3EC; }
